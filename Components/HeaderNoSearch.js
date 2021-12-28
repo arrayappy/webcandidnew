@@ -24,17 +24,17 @@ const HeaderNoSearch = () => {
 
 
       <div className = "flex justify-evenly max-w-2xl">
-        <div className = "group flex justify-evenly max-w-2xl mr-10 border-[#D7354A] border-2 items-center self-center px-4 py-2 rounded-full content-center hover:bg-[#D7354A] hover:text-white cursor-pointer">
-          <a 
-            href='https://play.google.com/store/apps/details?id=com.candid.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
-            target="_blank"
-            rel="noreferrer"
-            className = "cursor-pointer "
-            >
-            <div>
-              <p className = "text-[#D7354A] font-bold group-hover:text-white">Try Candid</p>
-            </div>
-          </a>
+          <div className = "group flex justify-evenly max-w-2xl mr-10 border-[#D7354A] border-2 items-center self-center px-4 py-2 rounded-full content-center hover:bg-[#D7354A] hover:text-white cursor-pointer">
+            <a 
+              href='https://play.google.com/store/apps/details?id=com.candid.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+              target="_blank"
+              rel="noreferrer"
+              className = "cursor-pointer "
+              >
+              <div>
+                <p className = "text-[#D7354A] font-bold group-hover:text-white">Try Candid</p>
+              </div>
+            </a>
           </div>
           <div className = "flex justify-evenly max-w-2xl content-center">  
             <HeaderItem title = "HOME" Icon = {HomeIcon} page = "/" />
