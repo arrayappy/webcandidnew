@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
+import Footer from '../Components/Footer'
+import HeaderNoSearch from '../Components/HeaderNoSearch'
 import Header from '../Components/HeaderNoSearch'
+import LandingPage from '../Components/LandingPage'
 import MainPage from '../Components/MainPage'
 import { API } from '../utils/exports'
 //import Error from '../../Components/Error'
@@ -27,11 +30,14 @@ const UserName = (props) => {
         <link rel="icon" href="/500SCircle.png" />
       </Head>
       <div>
-        <div className = "bg-white lg:sticky lg:top-0 lg:z-50">
-          <Header />
+        <div className = "bg-white lg:top-0 lg:z-50">
+          <HeaderNoSearch />
         </div>
         <div>
-          <MainPage content= {data} /> 
+          <LandingPage content= {data} />
+        </div>
+        <div className = "bg-white lg:bottom-0 lg:z-50 mt-20">
+          <Footer />
         </div>
       </div>
     </div>
