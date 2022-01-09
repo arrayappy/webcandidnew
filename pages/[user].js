@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React from 'react'
-import Header from '../Components/HeaderNoSearch'
-import MainPage from '../Components/MainPage'
+import Footer from '../Components/Footer'
+import HeaderNoSearch from '../Components/HeaderNoSearch'
+import LandingPage from '../Components/LandingPage'
+import UserPage from '../Components/UserPage'
 import { API } from '../utils/exports'
 //import Error from '../../Components/Error'
 
@@ -20,18 +22,21 @@ const User = (props) => {
   },[user,data,props])
 
   return (
-    <div>
+    <div >
       <Head>
         <title> Candid reviews posted by {user} </title>
         <meta name="description" content={"Find best products shared by " + user + " and incentivize them by buying using their links"} />
         <link rel="icon" href="/500SCircle.png" />
       </Head>
       <div>
-        <div className = "bg-white lg:sticky lg:top-0 lg:z-50">
-          <Header />
+        <div className = "bg-white lg:top-0 lg:z-50">
+          <HeaderNoSearch />
         </div>
         <div>
-          <MainPage content= {data} /> 
+          <LandingPage content= {data} />
+        </div>
+        <div className = "bg-white lg:bottom-0 lg:z-50 mt-20">
+          <Footer />
         </div>
       </div>
     </div>
